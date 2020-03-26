@@ -16,6 +16,20 @@ public class Principal {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+
+        Conta conta = new Conta();
+        conta.numero = 123;
+        conta.saldo = 100;
+        conta.limite = 100;
+
+        Cliente cliente = new Cliente();
+        cliente.nome = "Felipe";
+        conta.cliente = cliente; // esta linha é importante
+
+        conta.mostraInfos();
+
+
+
     }
     
 }
